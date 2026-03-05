@@ -1,0 +1,72 @@
+/* ============================================
+   Base Styles — Typography, Body, Links
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Naskh+Arabic:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600&display=swap');
+
+body {
+  font-family: var(--font-ar-body);
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--ink);
+  background-color: var(--sand-pale);
+  overflow-x: hidden;
+}
+
+html[lang="en"] body {
+  font-family: var(--font-en-body);
+  line-height: 1.6;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  font-family: var(--font-ar);
+  line-height: 1.2;
+  color: var(--umber);
+  font-weight: 700;
+}
+
+html[lang="en"] h1,
+html[lang="en"] h2,
+html[lang="en"] h3,
+html[lang="en"] h4 {
+  font-family: var(--font-en);
+}
+
+/* Body text */
+p {
+  margin-bottom: var(--space-md);
+  color: var(--ink);
+}
+
+/* Links */
+a {
+  transition: color var(--t-fast);
+}
+a:hover {
+  color: var(--terracotta);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--gold);
+  color: white;
+}
+
+/* Scrollbar (Webkit) */
+::-webkit-scrollbar { width: 7px; }
+::-webkit-scrollbar-track { background: var(--sand-pale); }
+::-webkit-scrollbar-thumb { background: var(--sand); border-radius: var(--radius-full); }
+::-webkit-scrollbar-thumb:hover { background: var(--amber); }
+
+/* Grain texture overlay */
+body::after {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: 0.02;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  background-size: 256px;
+}

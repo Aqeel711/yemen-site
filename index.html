@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="الجالية اليمنية — اكتشف حضارة اليمن العريقة وثقافته وتراثه | Yemen Students Society — Discover Yemen's ancient civilization">
+  <title>الجالية اليمنية | Yemen Students Society</title>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- ========== Page Loader ========== -->
+  <div class="page-loader">
+    <span class="page-loader__text">الجالية اليمنية</span>
+  </div>
+
+  <!-- ========== Navbar ========== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#hero" class="navbar__logo-link">
+      <img src="assets/logo/logo.png" alt="Yemen Students Society" class="navbar__logo-img">
+      <span class="navbar__logo-text" data-i18n="hero.title">الجالية اليمنية</span>
+    </a>
+
+    <ul class="navbar__links">
+      <li><a href="#about" class="navbar__link" data-i18n="nav.about">من نحن</a></li>
+      <li><a href="#heritage" class="navbar__link" data-i18n="nav.heritage">التراث</a></li>
+      <li><a href="#events" class="navbar__link" data-i18n="nav.events">الفعاليات</a></li>
+      <li><a href="#gallery" class="navbar__link" data-i18n="nav.gallery">المعرض</a></li>
+     
+      <li><a href="#team" class="navbar__link" data-i18n="nav.team">الفريق</a></li>
+      <li><a href="#contact" class="navbar__link" data-i18n="nav.contact">تواصل معنا</a></li>
+      <li>
+        <button class="lang-toggle" aria-label="Toggle language">
+          <span>English</span>
+        </button>
+      </li>
+    </ul>
+
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="menu-toggle__bar"></span>
+      <span class="menu-toggle__bar"></span>
+      <span class="menu-toggle__bar"></span>
+    </button>
+  </nav>
+
+  <!-- ========== Hero Section ========== -->
+  <section id="hero" class="hero">
+    <div class="hero__background">
+      <div class="hero__bg-gradient" id="heroBg"></div>
+      <div class="hero__pattern"></div>
+    </div>
+    <div class="hero__calligraphy">اليمن السعيد</div>
+
+    <div class="hero__content">
+      <img src="assets/logo/logo.png" alt="Yemen Students Society" class="hero__logo">
+      <h1 class="hero__title" data-i18n="hero.title">الجالية اليمنية</h1>
+      <p class="hero__subtitle-en">Yemen Students Society</p>
+      <div class="hero__divider"></div>
+      <div class="hero__tagline">
+        <span class="hero__tagline-ar" data-i18n="hero.tagline_ar">مِن أرضِ اليمن السعيد</span>
+        <span class="hero__tagline-en" data-i18n="hero.tagline_en">From the land of Arabia Felix</span>
+      </div>
+      <div class="hero__cta">
+        <a href="#heritage" class="btn btn--primary" data-i18n="hero.cta_primary">اكتشف تراثنا</a>
+        <a href="#contact" class="btn btn--outline" data-i18n="hero.cta_secondary">انضم إلينا</a>
+        <a href="https://www.figma.com/proto/O1LozNQ9vOFgC4TPQ4zHiv/%F0%9F%8E%84-Interactive-Advent-Calendar-Template--Community-?node-id=11-1023&t=Q0vlUNUSvfx5pY7v-1"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn--calendar"
+           data-i18n="hero.cta_calendar">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+          التقويم التفاعلي
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__scroll-hint">
+      <div class="hero__scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== About Section ========== -->
+  <section id="about" class="section section--cream">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title" data-i18n="about.title">من نحن</h2>
+        <div class="divider"></div>
+        <p class="section__subtitle" data-i18n="about.subtitle">نافذتكم على اليمن — ثقافته وحضارته وإنسانه</p>
+      </div>
+      <div class="about__content">
+        <div class="about__text reveal--left">
+          <p data-i18n="about.text_1">نحن الجالية اليمنية — مجتمع من الطلاب الذين يحملون تراث اليمن العريق في قلوبهم. نجتمع لنحتفي بثقافتنا، ونشارك قصصنا، وندعو العالم ليتعرف على حضارة من أقدم الحضارات الإنسانية.</p>
+          <p data-i18n="about.text_2">بيتنا مفتوح للجميع — يمنيين وغير يمنيين — لأن الضيافة عندنا ليست مجرد تقليد، بل هي هوية. نؤمن بأن اليمن يمتلك إرثاً حضارياً عظيماً يستحق أن يُروى ويُعرف.</p>
+        </div>
+        <div class="about__deco reveal--right">
+          <span class="about__deco-text">يمن</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Heritage Section ========== -->
+  <section id="heritage" class="section section--sand">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title" data-i18n="heritage.title">خيوط من التراث</h2>
+        <div class="divider"></div>
+        <p class="section__subtitle" data-i18n="heritage.subtitle">ستة أوجه من حضارة يمنية خالدة</p>
+      </div>
+      <div class="heritage-grid">
+        <div class="heritage-card">
+          <img class="heritage-card__icon heritage-card__icon--img" src="assets/images/sanaa-building.png" alt="Sana'a Architecture">
+          <h3 class="heritage-card__title" data-i18n="heritage.threads.architecture.title">عمارة صنعاء</h3>
+          <p class="heritage-card__text" data-i18n="heritage.threads.architecture.text">قبل أن يعرف العالم ناطحات السحاب، بنى اليمنيون أبراجهم من الطين والحجر. بيوت ترتفع سبعة طوابق مزينة بالنوافذ القمرية التي تحول ضوء الشمس إلى لوحات فنية.</p>
+        </div>
+        <div class="heritage-card">
+          <span class="heritage-card__icon">☕</span>
+          <h3 class="heritage-card__title" data-i18n="heritage.threads.coffee.title">أرض البُن</h3>
+          <p class="heritage-card__text" data-i18n="heritage.threads.coffee.text">كلمة "موكا" لم تُولد في مقهى عصري — بل في ميناء المخا اليمني. من اليمن انطلقت القهوة إلى العالم لتغير وجه الحضارة الإنسانية.</p>
+        </div>
+        <div class="heritage-card heritage-card--socotra">
+          <img class="heritage-card__icon heritage-card__icon--img" src="assets/images/socotra-tree.png" alt="Socotra Dragon Blood Tree">
+          <h3 class="heritage-card__title" data-i18n="heritage.threads.socotra.title">سقطرى</h3>
+          <p class="heritage-card__text" data-i18n="heritage.threads.socotra.text">جزيرة سقطرى قطعة من كوكب آخر. أشجار دم الأخوين تقف كمظلات من عالم خيالي. صنّفتها اليونسكو كموقع تراث عالمي لأن ثلث نباتاتها لا توجد في أي مكان آخر.</p>
+        </div>
+        <div class="heritage-card">
+          <span class="heritage-card__icon">🗡️</span>
+          <h3 class="heritage-card__title" data-i18n="heritage.threads.clothing.title">الأزياء والفضة</h3>
+          <p class="heritage-card__text" data-i18n="heritage.threads.clothing.text">الجنبية ليست مجرد خنجر — إنها رمز للشرف والهوية. وفن صياغة الفضة اليمنية يُعد من أرقى الفنون الحرفية في الشرق الأوسط.</p>
+        </div>
+        <div class="heritage-card">
+          <span class="heritage-card__icon">✒️</span>
+          <h3 class="heritage-card__title" data-i18n="heritage.threads.calligraphy.title">الخط والشعر</h3>
+          <p class="heritage-card__text" data-i18n="heritage.threads.calligraphy.text">اليمن أرض الشعر. الشعر اليمني ليس مجرد أدب — إنه نبض الحياة اليومية، يُغنّى في الأعراس ويُردد في المجالس. والخط العربي يحوّل هذه الكلمات إلى لوحات بصرية.</p>
+        </div>
+        <div class="heritage-card">
+          <span class="heritage-card__icon">🍯</span>
+          <h3 class="heritage-card__title" data-i18n="heritage.threads.food.title">المطبخ والضيافة</h3>
+          <p class="heritage-card__text" data-i18n="heritage.threads.food.text">في اليمن، لا يُقدَّم الطعام — بل يُقدَّم الحب. السلتة والمندي وبنت الصحن المغمورة بالعسل — المائدة اليمنية لا تعرف الغريب. البيت بيتك.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Events Section ========== -->
+  <section id="events" class="section section--cream">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title" data-i18n="events.title">الفعاليات</h2>
+        <div class="divider"></div>
+        <p class="section__subtitle" data-i18n="events.subtitle">فعاليات قادمة من الجالية اليمنية</p>
+      </div>
+
+      <div class="events-grid">
+        <article class="event-card reveal">
+          <div class="event-card__image">
+            <!-- Replace this div with: <img src="assets/images/iftar-event.jpg" alt="Ramadan Iftar" class="event-card__img"> -->
+            <div class="event-card__placeholder">
+              <span class="event-card__placeholder-emoji">🌙</span>
+            </div>
+          </div>
+          <div class="event-card__content">
+            <span class="event-card__badge" data-i18n="events.iftar.badge">رمضان</span>
+            <h3 class="event-card__title" data-i18n="events.iftar.title">إفطار رمضان</h3>
+            <div class="event-card__meta">
+              <span class="event-card__meta-item">
+                <span>📅</span>
+                <span data-i18n="events.iftar.date">١٠ مارس ٢٠٢٦</span>
+              </span>
+              <span class="event-card__meta-item">
+                <span>🕐</span>
+                <span data-i18n="events.iftar.time">غروب الشمس</span>
+              </span>
+              <span class="event-card__meta-item">
+                <span>📍</span>
+                <span data-i18n="events.iftar.location">مركز الأنشطة</span>
+              </span>
+            </div>
+            <p class="event-card__description" data-i18n="events.iftar.description">ندعوكم لإفطار رمضاني دافئ مع الجالية اليمنية. تعالوا نتشارك الطعام والحكايات والأجواء الرمضانية الجميلة. الجميع مرحب بهم.</p>
+            <a href="iftar.html" target="_blank" class="btn btn--primary event-card__cta" data-i18n="events.iftar.cta">سجّل الآن</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Gallery Section ========== -->
+  <section id="gallery" class="section section--cream">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title" data-i18n="gallery.title">المعرض</h2>
+        <div class="divider"></div>
+        <p class="section__subtitle" data-i18n="gallery.subtitle">لمحات من اليمن — صور تحكي أكثر مما تقول الكلمات</p>
+      </div>
+      <div class="gallery__filters">
+        <button class="gallery__filter-btn gallery__filter-btn--active" data-filter="all" data-i18n="gallery.filter_all">الكل</button>
+        <button class="gallery__filter-btn" data-filter="architecture" data-i18n="gallery.filter_architecture">عمارة</button>
+        <button class="gallery__filter-btn" data-filter="nature" data-i18n="gallery.filter_nature">طبيعة</button>
+        <button class="gallery__filter-btn" data-filter="culture" data-i18n="gallery.filter_culture">ثقافة</button>
+        <button class="gallery__filter-btn" data-filter="events" data-i18n="gallery.filter_events">فعاليات</button>
+      </div>
+      <div class="gallery-grid">
+        <!--
+          TO ADD REAL PHOTOS: Replace the <div> with <img>, like this:
+          <img class="gallery-item__image" src="assets/images/sanaa.jpg" alt="Old Sana'a">
+        -->
+        <div class="gallery-item" data-category="architecture">
+          <div class="gallery-item__image" style="width:100%;height:100%;background:linear-gradient(135deg,var(--terracotta),var(--amber));"></div>
+          <div class="gallery-item__overlay"><span class="gallery-item__caption">صنعاء القديمة — Old Sana'a</span></div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <div class="gallery-item__image" style="width:100%;height:100%;background:linear-gradient(135deg,var(--teal),var(--teal-light));"></div>
+          <div class="gallery-item__overlay"><span class="gallery-item__caption">سقطرى — Socotra</span></div>
+        </div>
+        <div class="gallery-item" data-category="culture">
+          <div class="gallery-item__image" style="width:100%;height:100%;background:linear-gradient(135deg,var(--gold),var(--umber));"></div>
+          <div class="gallery-item__overlay"><span class="gallery-item__caption">تراث يمني — Yemeni Heritage</span></div>
+        </div>
+        <div class="gallery-item" data-category="architecture">
+          <div class="gallery-item__image" style="width:100%;height:100%;background:linear-gradient(135deg,var(--sand),var(--terracotta));"></div>
+          <div class="gallery-item__overlay"><span class="gallery-item__caption">شبام حضرموت — Shibam</span></div>
+        </div>
+        <div class="gallery-item" data-category="nature">
+          <div class="gallery-item__image" style="width:100%;height:100%;background:linear-gradient(135deg,#4a6741,var(--amber));"></div>
+          <div class="gallery-item__overlay"><span class="gallery-item__caption">مدرجات زراعية — Terraced Fields</span></div>
+        </div>
+        <div class="gallery-item" data-category="culture">
+          <div class="gallery-item__image" style="width:100%;height:100%;background:linear-gradient(135deg,var(--umber),var(--gold));"></div>
+          <div class="gallery-item__overlay"><span class="gallery-item__caption">فن الخط — Calligraphy</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ 
+
+
+  <!-- ========== Team Section ========== -->
+  <section id="team" class="section section--cream">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title" data-i18n="team.title">الفريق</h2>
+        <div class="divider"></div>
+        <p class="section__subtitle" data-i18n="team.subtitle">الأشخاص الذين يقفون خلف الجالية اليمنية</p>
+      </div>
+      <div class="team__grid">
+        <div class="team-card">
+          <img class="team-card__photo" src="assets/team/aqeel.png" alt="Aqeel - President">
+          <h3 class="team-card__name">Aqeel</h3>
+          <p class="team-card__role" data-i18n="team.role_president">الرئيس</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__photo" style="background:linear-gradient(145deg,var(--sand),var(--gold));display:flex;align-items:center;justify-content:center;font-family:var(--font-ar);font-size:2rem;color:var(--umber);opacity:0.25;">ب</div>
+          <h3 class="team-card__name">الاسم</h3>
+          <p class="team-card__role" data-i18n="team.role_vp">نائب الرئيس</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__photo" style="background:linear-gradient(145deg,var(--sand),var(--gold));display:flex;align-items:center;justify-content:center;font-family:var(--font-ar);font-size:2rem;color:var(--umber);opacity:0.25;">ت</div>
+          <h3 class="team-card__name">الاسم</h3>
+          <p class="team-card__role" data-i18n="team.role_treasurer">أمين الصندوق</p>
+        </div>
+        <div class="team-card">
+          <div class="team-card__photo" style="background:linear-gradient(145deg,var(--sand),var(--gold));display:flex;align-items:center;justify-content:center;font-family:var(--font-ar);font-size:2rem;color:var(--umber);opacity:0.25;">ث</div>
+          <h3 class="team-card__name">الاسم</h3>
+          <p class="team-card__role" data-i18n="team.role_events">مسؤول الفعاليات</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Contact Section ========== -->
+  <section id="contact" class="section section--sand">
+    <div class="container">
+      <div class="section__header">
+        <h2 class="section__title" data-i18n="contact.title">تواصل معنا</h2>
+        <div class="divider"></div>
+        <p class="section__subtitle" data-i18n="contact.subtitle">نسعد بسماع أفكاركم واقتراحاتكم</p>
+      </div>
+      <div class="contact__layout">
+        <div class="contact__info reveal--left">
+          <div class="contact__info-item">
+            <span>📧</span>
+            <div>
+              <strong data-i18n="contact.info_email">البريد الإلكتروني</strong>
+              <p>yemen.society@university.edu</p>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <span>📍</span>
+            <div>
+              <strong data-i18n="contact.info_location">الموقع</strong>
+              <p>Eastern Mediterranean University</p>
+            </div>
+          </div>
+          <div class="contact__info-item">
+            <span>🌐</span>
+            <div>
+              <strong data-i18n="contact.info_socials">تابعونا</strong>
+              <div class="socials" style="margin-top:var(--space-sm);">
+                <a href="#" class="socials__link" aria-label="Instagram">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
+                </a>
+                <a href="#" class="socials__link" aria-label="Twitter/X">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4l6.5 8L4 20h2l5.5-6.8L16 20h4l-6.8-8.5L20 4h-2l-5.2 6.3L8 4H4z"/></svg>
+                </a>
+                <a href="#" class="socials__link" aria-label="WhatsApp">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21l1.5-5.5A9 9 0 1 1 9.5 19.5L3 21z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact__form reveal--right" onsubmit="event.preventDefault();">
+          <input type="text" class="contact__input" data-i18n="contact.form_name" placeholder="الاسم" required>
+          <input type="email" class="contact__input" data-i18n="contact.form_email" placeholder="البريد الإلكتروني" required>
+          <textarea class="contact__textarea" data-i18n="contact.form_message" placeholder="رسالتك" required></textarea>
+          <button type="submit" class="btn btn--primary" data-i18n="contact.form_send">إرسال</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container footer__content">
+      <div class="footer__farewell-ar">البيت بيتك</div>
+      <div class="footer__farewell-en">Our home is your home</div>
+      <div class="footer__links">
+        <a href="#about" class="footer__link" data-i18n="nav.about">من نحن</a>
+        <a href="#heritage" class="footer__link" data-i18n="nav.heritage">التراث</a>
+        <a href="#gallery" class="footer__link" data-i18n="nav.gallery">المعرض</a>
+        <a href="#contact" class="footer__link" data-i18n="nav.contact">تواصل معنا</a>
+      </div>
+      <p class="footer__copy" data-i18n="footer.copyright">© 2026 الجالية اليمنية · Yemen Students Society</p>
+    </div>
+    <p>© 2026 Your Website Name. All rights reserved.</p>
+  </footer>
+
+  <!-- ========== Lightbox ========== -->
+  <div class="lightbox" role="dialog" aria-label="Image viewer">
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+    <img class="lightbox__image" src="" alt="">
+  </div>
+
+  <!-- ========== Scripts ========== -->
+  <!-- GSAP + ScrollTrigger CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- App Scripts (order matters) -->
+  <script src="js/navigation.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

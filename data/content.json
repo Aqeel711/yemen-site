@@ -1,0 +1,244 @@
+{
+  "ar": {
+    "nav": {
+      "home": "الرئيسية",
+      "about": "من نحن",
+      "heritage": "التراث",
+      "gallery": "المعرض",
+      "articles": "المقالات",
+      "events": "الفعاليات",
+      "team": "الفريق",
+      "contact": "تواصل معنا"
+    },
+    "hero": {
+      "title": "الجالية اليمنية",
+      "tagline_ar": "مِن أرضِ اليمن السعيد",
+      "tagline_en": "From the land of Arabia Felix",
+      "cta_primary": "اكتشف تراثنا",
+      "cta_secondary": "انضم إلينا",
+      "cta_calendar": "التقويم التفاعلي",
+      "scroll_hint": "استكشف"
+    },
+    "about": {
+      "title": "من نحن",
+      "subtitle": "نافذتكم على اليمن — ثقافته وحضارته وإنسانه",
+      "text_1": "نحن الجالية اليمنية — مجتمع من الطلاب الذين يحملون تراث اليمن العريق في قلوبهم. نجتمع لنحتفي بثقافتنا، ونشارك قصصنا، وندعو العالم ليتعرف على حضارة من أقدم الحضارات الإنسانية.",
+      "text_2": "بيتنا مفتوح للجميع — يمنيين وغير يمنيين — لأن الضيافة عندنا ليست مجرد تقليد، بل هي هوية. نؤمن بأن اليمن يمتلك إرثاً حضارياً عظيماً يستحق أن يُروى ويُعرف."
+    },
+    "heritage": {
+      "title": "خيوط من التراث",
+      "subtitle": "ستة أوجه من حضارة يمنية خالدة",
+      "threads": {
+        "architecture": {
+          "title": "عمارة صنعاء",
+          "text": "قبل أن يعرف العالم ناطحات السحاب، بنى اليمنيون أبراجهم من الطين والحجر. بيوت ترتفع سبعة طوابق مزينة بالنوافذ القمرية التي تحول ضوء الشمس إلى لوحات فنية."
+        },
+        "coffee": {
+          "title": "أرض البُن",
+          "text": "كلمة \"موكا\" لم تُولد في مقهى عصري — بل في ميناء المخا اليمني. من اليمن انطلقت القهوة إلى العالم لتغير وجه الحضارة الإنسانية."
+        },
+        "socotra": {
+          "title": "سقطرى",
+          "text": "جزيرة سقطرى قطعة من كوكب آخر. أشجار دم الأخوين تقف كمظلات من عالم خيالي. صنّفتها اليونسكو كموقع تراث عالمي لأن ثلث نباتاتها لا توجد في أي مكان آخر."
+        },
+        "clothing": {
+          "title": "الأزياء والفضة",
+          "text": "الجنبية ليست مجرد خنجر — إنها رمز للشرف والهوية. وفن صياغة الفضة اليمنية يُعد من أرقى الفنون الحرفية في الشرق الأوسط."
+        },
+        "calligraphy": {
+          "title": "الخط والشعر",
+          "text": "اليمن أرض الشعر. الشعر اليمني ليس مجرد أدب — إنه نبض الحياة اليومية، يُغنّى في الأعراس ويُردد في المجالس. والخط العربي يحوّل هذه الكلمات إلى لوحات بصرية."
+        },
+        "food": {
+          "title": "المطبخ والضيافة",
+          "text": "في اليمن، لا يُقدَّم الطعام — بل يُقدَّم الحب. السلتة والمندي وبنت الصحن المغمورة بالعسل — المائدة اليمنية لا تعرف الغريب. البيت بيتك."
+        }
+      }
+    },
+    "events": {
+      "title": "الفعاليات",
+      "subtitle": "فعاليات قادمة من الجالية اليمنية",
+      "iftar": {
+        "badge": "رمضان",
+        "title": "إفطار رمضان",
+        "date": "١٠ مارس ٢٠٢٦",
+        "time": "غروب الشمس",
+        "location": "مركز الأنشطة",
+        "description": "ندعوكم لإفطار رمضاني دافئ مع الجالية اليمنية. تعالوا نتشارك الطعام والحكايات والأجواء الرمضانية الجميلة. الجميع مرحب بهم.",
+        "cta": "سجّل الآن"
+      }
+    },
+    "gallery": {
+      "title": "المعرض",
+      "subtitle": "لمحات من اليمن — صور تحكي أكثر مما تقول الكلمات",
+      "filter_all": "الكل",
+      "filter_architecture": "عمارة",
+      "filter_nature": "طبيعة",
+      "filter_culture": "ثقافة",
+      "filter_events": "فعاليات"
+    },
+    "articles": {
+      "title": "المقالات",
+      "subtitle": "قراءات وقصص من عمق الثقافة اليمنية",
+      "read_more": "اقرأ المزيد",
+      "placeholder_1": {
+        "title": "قهوة المخا: رحلة البُن اليمني إلى العالم",
+        "excerpt": "كيف حملت سفن المخا حبوب البن اليمني لتغير ثقافة الشرب حول العالم...",
+        "date": "قريباً"
+      },
+      "placeholder_2": {
+        "title": "صنعاء القديمة: متحف حي في قلب الجزيرة العربية",
+        "excerpt": "جولة في أزقة المدينة القديمة وأسرار عمارتها التي تعود لقرون...",
+        "date": "قريباً"
+      },
+      "placeholder_3": {
+        "title": "شجرة دم الأخوين: أيقونة سقطرى الخالدة",
+        "excerpt": "قصة الشجرة الأسطورية التي لا توجد إلا في أرخبيل سقطرى اليمني...",
+        "date": "قريباً"
+      }
+    },
+    "team": {
+      "title": "الفريق",
+      "subtitle": "الأشخاص الذين يقفون خلف الجالية اليمنية",
+      "role_president": "الرئيس",
+      "role_vp": "نائب الرئيس",
+      "role_treasurer": "أمين الصندوق",
+      "role_events": "مسؤول الفعاليات"
+    },
+    "contact": {
+      "title": "تواصل معنا",
+      "subtitle": "نسعد بسماع أفكاركم واقتراحاتكم",
+      "info_email": "البريد الإلكتروني",
+      "info_location": "الموقع",
+      "info_socials": "تابعونا",
+      "form_name": "الاسم",
+      "form_email": "البريد الإلكتروني",
+      "form_message": "رسالتك",
+      "form_send": "إرسال"
+    },
+    "footer": {
+      "copyright": "© 2026 الجالية اليمنية · Yemen Students Society"
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "heritage": "Heritage",
+      "gallery": "Gallery",
+      "articles": "Articles",
+      "events": "Events",
+      "team": "Team",
+      "contact": "Contact"
+    },
+    "hero": {
+      "title": "Yemen Students Society",
+      "tagline_ar": "مِن أرضِ اليمن السعيد",
+      "tagline_en": "From the land of Arabia Felix",
+      "cta_primary": "Explore Heritage",
+      "cta_secondary": "Join Us",
+      "cta_calendar": "Interactive Calendar",
+      "scroll_hint": "Explore"
+    },
+    "about": {
+      "title": "About Us",
+      "subtitle": "Your window into Yemen — its culture, civilization, and people",
+      "text_1": "We are the Yemen Students Society — a community of students who carry Yemen's ancient heritage in their hearts. We gather to celebrate our culture, share our stories, and invite the world to discover one of humanity's oldest civilizations.",
+      "text_2": "Our door is open to everyone — Yemeni and non-Yemeni alike — because hospitality isn't just our tradition, it's our identity. We believe Yemen possesses a magnificent civilizational heritage that deserves to be told and known."
+    },
+    "heritage": {
+      "title": "Threads of Heritage",
+      "subtitle": "Six facets of an enduring Yemeni civilization",
+      "threads": {
+        "architecture": {
+          "title": "Sana'a Architecture",
+          "text": "Before the world knew skyscrapers, Yemenis built towers from mud and stone. Houses rising seven stories, adorned with qamariyya windows that transform sunlight into art."
+        },
+        "coffee": {
+          "title": "Land of Coffee",
+          "text": "The word \"mocha\" wasn't born in a trendy café — it came from the Yemeni port of Al-Makha. From Yemen, coffee traveled to the world, transforming human civilization."
+        },
+        "socotra": {
+          "title": "Socotra",
+          "text": "Socotra is a piece of another planet. Dragon Blood trees stand like umbrellas from a fantasy world. UNESCO designated it a World Heritage Site — a third of its plant life exists nowhere else."
+        },
+        "clothing": {
+          "title": "Clothing & Silver",
+          "text": "The janbiya is not merely a dagger — it is a symbol of honor and identity. Yemeni silverwork ranks among the finest craftsmanship in the Middle East."
+        },
+        "calligraphy": {
+          "title": "Calligraphy & Poetry",
+          "text": "Yemen is the land of poetry. Yemeni poetry isn't just literature — it is the pulse of daily life, sung at weddings and recited in gatherings. Arabic calligraphy transforms these words into visual masterpieces."
+        },
+        "food": {
+          "title": "Cuisine & Hospitality",
+          "text": "In Yemen, food isn't served — love is. Saltah, mandi, and bint al-sahn drenched in honey — the Yemeni table knows no stranger. Our home is your home."
+        }
+      }
+    },
+    "events": {
+      "title": "Events",
+      "subtitle": "Upcoming events from Yemen Students Society",
+      "iftar": {
+        "badge": "Ramadan",
+        "title": "Ramadan Iftar",
+        "date": "10th March 2026",
+        "time": "Sunset",
+        "location": "Activity Center",
+        "description": "Join us for a warm Ramadan Iftar with the Yemen Students Society. Come share food, stories, and beautiful Ramadan moments together. Everyone is welcome.",
+        "cta": "RSVP Now"
+      }
+    },
+    "gallery": {
+      "title": "Gallery",
+      "subtitle": "Glimpses of Yemen — images that say more than words",
+      "filter_all": "All",
+      "filter_architecture": "Architecture",
+      "filter_nature": "Nature",
+      "filter_culture": "Culture",
+      "filter_events": "Events"
+    },
+    "articles": {
+      "title": "Articles",
+      "subtitle": "Readings and stories from the heart of Yemeni culture",
+      "read_more": "Read More",
+      "placeholder_1": {
+        "title": "Mocha Coffee: The Journey of Yemeni Beans to the World",
+        "excerpt": "How ships from Mocha carried Yemeni coffee beans to change drinking culture worldwide...",
+        "date": "Coming Soon"
+      },
+      "placeholder_2": {
+        "title": "Old Sana'a: A Living Museum in the Heart of Arabia",
+        "excerpt": "A journey through the alleys of the old city and the secrets of its centuries-old architecture...",
+        "date": "Coming Soon"
+      },
+      "placeholder_3": {
+        "title": "The Dragon Blood Tree: Socotra's Timeless Icon",
+        "excerpt": "The story of the legendary tree found only in Yemen's Socotra archipelago...",
+        "date": "Coming Soon"
+      }
+    },
+    "team": {
+      "title": "Our Team",
+      "subtitle": "The people behind the Yemen Students Society",
+      "role_president": "President",
+      "role_vp": "Vice President",
+      "role_treasurer": "Treasurer",
+      "role_events": "Events Lead"
+    },
+    "contact": {
+      "title": "Get in Touch",
+      "subtitle": "We'd love to hear your ideas and suggestions",
+      "info_email": "Email",
+      "info_location": "Location",
+      "info_socials": "Follow Us",
+      "form_name": "Name",
+      "form_email": "Email",
+      "form_message": "Your Message",
+      "form_send": "Send"
+    },
+    "footer": {
+      "copyright": "© 2026 Yemen Students Society · الجالية اليمنية"
+    }
+  }
+}

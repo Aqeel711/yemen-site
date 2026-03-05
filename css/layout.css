@@ -1,0 +1,69 @@
+/* ============================================
+   Layout — Containers, Grids, Section Wrappers
+   ============================================ */
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-xl);
+}
+
+/* Sections */
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+.section {
+  padding: var(--space-section) 0;
+}
+
+.section--sand {
+  background-color: var(--sand-light);
+}
+
+.section--cream {
+  background-color: var(--sand-pale);
+}
+
+.section--dark {
+  background-color: var(--umber);
+  color: var(--sand-light);
+}
+
+/* Section header */
+.section__header {
+  text-align: center;
+  margin-bottom: var(--space-4xl);
+}
+
+.section__title {
+  font-size: var(--text-4xl);
+  margin-bottom: var(--space-md);
+}
+
+.section__subtitle {
+  font-size: var(--text-lg);
+  color: var(--umber-mid);
+  opacity: 0.7;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section--dark .section__title {
+  color: var(--sand-light);
+}
+
+.section--dark .section__subtitle {
+  color: var(--sand);
+}
+
+/* Divider */
+.divider {
+  width: 55px;
+  height: 2.5px;
+  border-radius: var(--radius-full);
+  background: linear-gradient(to right, var(--terracotta), var(--gold));
+  margin: var(--space-lg) auto;
+}

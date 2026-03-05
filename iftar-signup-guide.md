@@ -1,0 +1,571 @@
+# Iftar Signup Form — Setup Guide
+
+## Step 1: Open this file
+You're reading it right now — `iftar-signup-guide.md`.
+
+## Step 2: Scroll to Step 4
+Find the big block of HTML code below (the one that starts with `<!DOCTYPE html>`).
+
+## Step 3: Copy ALL of that HTML code
+
+## Step 4: Save as `iftar.html`
+Open any text editor (VS Code, Notepad, whatever) → paste the HTML below → save as **`iftar.html`**
+
+```html
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل إفطار رمضان | Yemen Students Society</title>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600&family=Noto+Naskh+Arabic:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sand: #E8D5B7;
+      --sand-light: #F5EDE0;
+      --cream: #FEFCF9;
+      --terracotta: #B5542A;
+      --amber: #C8922A;
+      --gold: #D4A846;
+      --umber: #2A1F14;
+      --umber-light: #3D2E1F;
+      --teal: #1A5C52;
+      --font-ar: 'Noto Naskh Arabic', 'Amiri', serif;
+      --font-en: 'Inter', sans-serif;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: var(--font-ar);
+      background: var(--cream);
+      color: var(--umber);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      background-image:
+        radial-gradient(ellipse at 20% 50%, rgba(200, 146, 42, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 50%, rgba(181, 84, 42, 0.06) 0%, transparent 50%);
+    }
+
+    .form-container {
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 40px rgba(42, 31, 20, 0.08), 0 1px 3px rgba(42, 31, 20, 0.04);
+      max-width: 540px;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    /* ── Header ── */
+    .form-header {
+      background: linear-gradient(135deg, var(--umber) 0%, var(--umber-light) 100%);
+      padding: 2.5rem 2rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .form-header::before {
+      content: '🌙';
+      position: absolute;
+      font-size: 6rem;
+      opacity: 0.06;
+      top: -10px;
+      left: 20px;
+    }
+
+    .form-header__emoji {
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .form-header__title {
+      font-family: var(--font-ar);
+      font-size: 1.75rem;
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+      line-height: 1.4;
+    }
+
+    .form-header__subtitle {
+      font-family: var(--font-en);
+      font-size: 0.95rem;
+      color: rgba(254, 252, 249, 0.6);
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+
+    .form-header__details {
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid rgba(212, 168, 70, 0.2);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-family: var(--font-en);
+      font-size: 0.8rem;
+      color: rgba(254, 252, 249, 0.5);
+    }
+
+    .form-header__details span {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* ── Form Body ── */
+    .form-body {
+      padding: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group__label {
+      display: block;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--umber);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-group__label-en {
+      font-family: var(--font-en);
+      font-size: 0.75rem;
+      color: rgba(42, 31, 20, 0.4);
+      font-weight: 400;
+      margin-right: 0.5rem;
+      direction: ltr;
+      display: inline;
+    }
+
+    .form-group__input {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1.5px solid var(--sand);
+      border-radius: 10px;
+      font-family: var(--font-ar);
+      font-size: 1rem;
+      color: var(--umber);
+      background: var(--cream);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      outline: none;
+    }
+
+    .form-group__input:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(212, 168, 70, 0.15);
+    }
+
+    .form-group__input::placeholder {
+      color: rgba(42, 31, 20, 0.3);
+    }
+
+    /* ── Radio Buttons (Attending) ── */
+    .radio-group {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .radio-option {
+      flex: 1;
+      position: relative;
+    }
+
+    .radio-option input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .radio-option__label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.85rem 1rem;
+      border: 1.5px solid var(--sand);
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--umber);
+      background: var(--cream);
+      transition: all 0.2s ease;
+      text-align: center;
+    }
+
+    .radio-option__label:hover {
+      border-color: var(--amber);
+      background: var(--sand-light);
+    }
+
+    .radio-option input:checked + .radio-option__label {
+      border-color: var(--teal);
+      background: rgba(26, 92, 82, 0.08);
+      color: var(--teal);
+    }
+
+    .radio-option--no input:checked + .radio-option__label {
+      border-color: var(--terracotta);
+      background: rgba(181, 84, 42, 0.08);
+      color: var(--terracotta);
+    }
+
+    .radio-option--maybe input:checked + .radio-option__label {
+      border-color: var(--amber);
+      background: rgba(200, 146, 42, 0.08);
+      color: var(--amber);
+    }
+
+    /* ── Textarea ── */
+    .form-group__textarea {
+      width: 100%;
+      padding: 0.85rem 1rem;
+      border: 1.5px solid var(--sand);
+      border-radius: 10px;
+      font-family: var(--font-ar);
+      font-size: 0.95rem;
+      color: var(--umber);
+      background: var(--cream);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+      outline: none;
+      resize: vertical;
+      min-height: 90px;
+    }
+
+    .form-group__textarea:focus {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(212, 168, 70, 0.15);
+    }
+
+    .form-group__textarea::placeholder {
+      color: rgba(42, 31, 20, 0.3);
+    }
+
+    /* ── Submit Button ── */
+    .form-submit {
+      width: 100%;
+      padding: 1rem;
+      background: linear-gradient(135deg, var(--teal) 0%, #1e6b5f 100%);
+      color: white;
+      border: none;
+      border-radius: 12px;
+      font-family: var(--font-ar);
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      letter-spacing: 0.02em;
+      margin-top: 0.5rem;
+    }
+
+    .form-submit:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(26, 92, 82, 0.3);
+    }
+
+    .form-submit:active {
+      transform: translateY(0);
+    }
+
+    .form-submit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    /* ── States ── */
+    .form-status {
+      text-align: center;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      display: none;
+    }
+
+    .form-status--success {
+      display: block;
+      background: rgba(26, 92, 82, 0.08);
+      color: var(--teal);
+      border: 1px solid rgba(26, 92, 82, 0.2);
+    }
+
+    .form-status--error {
+      display: block;
+      background: rgba(181, 84, 42, 0.08);
+      color: var(--terracotta);
+      border: 1px solid rgba(181, 84, 42, 0.2);
+    }
+
+    .form-status__emoji {
+      font-size: 1.5rem;
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+
+    /* ── Success Overlay ── */
+    .success-overlay {
+      display: none;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .success-overlay--visible {
+      display: block;
+    }
+
+    .success-overlay__emoji {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .success-overlay__title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--teal);
+      margin-bottom: 0.5rem;
+    }
+
+    .success-overlay__text {
+      font-size: 0.95rem;
+      color: rgba(42, 31, 20, 0.6);
+      line-height: 1.6;
+    }
+
+    /* ── Footer ── */
+    .form-footer {
+      text-align: center;
+      padding: 1.25rem 2rem;
+      background: var(--sand-light);
+      font-family: var(--font-en);
+      font-size: 0.75rem;
+      color: rgba(42, 31, 20, 0.4);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      body { padding: 1rem; }
+      .form-header { padding: 2rem 1.5rem; }
+      .form-body { padding: 1.5rem; }
+      .form-header__title { font-size: 1.4rem; }
+      .radio-group { flex-direction: column; gap: 0.5rem; }
+      .form-header__details { flex-direction: column; gap: 0.5rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+
+    <!-- Header -->
+    <div class="form-header">
+      <span class="form-header__emoji">🌙</span>
+      <h1 class="form-header__title">تسجيل حضور إفطار رمضان</h1>
+      <p class="form-header__subtitle">Ramadan Iftar RSVP — Yemen Students Society</p>
+      <div class="form-header__details">
+        <span>📅 TBD</span>
+        <span>🕐 Sunset</span>
+        <span>📍 TBD</span>
+      </div>
+    </div>
+
+    <!-- Form -->
+    <form class="form-body" id="iftarForm">
+
+      <!-- Name -->
+      <div class="form-group">
+        <label class="form-group__label">
+          الاسم
+          <span class="form-group__label-en">Name</span>
+        </label>
+        <input
+          type="text"
+          class="form-group__input"
+          id="nameInput"
+          placeholder="أدخل اسمك الكامل"
+          required
+        >
+      </div>
+
+      <!-- Student Number -->
+      <div class="form-group">
+        <label class="form-group__label">
+          الرقم الجامعي
+          <span class="form-group__label-en">Student Number</span>
+        </label>
+        <input
+          type="text"
+          class="form-group__input"
+          id="studentNumInput"
+          placeholder="مثال: 202312345"
+          required
+        >
+      </div>
+
+      <!-- Attending -->
+      <div class="form-group">
+        <label class="form-group__label">
+          هل ستحضر؟
+          <span class="form-group__label-en">Will you attend?</span>
+        </label>
+        <div class="radio-group">
+          <div class="radio-option">
+            <input type="radio" name="attending" id="attendYes" value="قادم ✅" required>
+            <label for="attendYes" class="radio-option__label">قادم ✅</label>
+          </div>
+          <div class="radio-option radio-option--no">
+            <input type="radio" name="attending" id="attendNo" value="لن أحضر ❌">
+            <label for="attendNo" class="radio-option__label">لن أحضر ❌</label>
+          </div>
+          <div class="radio-option radio-option--maybe">
+            <input type="radio" name="attending" id="attendMaybe" value="ربما 🤔">
+            <label for="attendMaybe" class="radio-option__label">ربما 🤔</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Feedback -->
+      <div class="form-group">
+        <label class="form-group__label">
+          ماذا يعجبك في الجالية اليمنية؟
+          <span class="form-group__label-en">What do you like about Yemen Society?</span>
+        </label>
+        <textarea
+          class="form-group__textarea"
+          id="feedbackInput"
+          placeholder="شاركنا رأيك... نحب نسمع منك 💛"
+        ></textarea>
+      </div>
+
+      <!-- Submit -->
+      <button type="submit" class="form-submit" id="submitBtn">
+        تسجيل الحضور
+      </button>
+
+      <!-- Status Messages -->
+      <div class="form-status" id="formStatus"></div>
+
+    </form>
+
+    <!-- Success State (replaces form) -->
+    <div class="success-overlay" id="successOverlay">
+      <span class="success-overlay__emoji">🎉</span>
+      <h2 class="success-overlay__title">تم التسجيل بنجاح!</h2>
+      <p class="success-overlay__text">
+        جزاك الله خيراً — نراك على الإفطار إن شاء الله
+        <br>
+        <small style="color: rgba(42,31,20,0.4); font-family: Inter, sans-serif;">
+          Registration complete — see you at Iftar inshaAllah!
+        </small>
+      </p>
+    </div>
+
+    <!-- Footer -->
+    <div class="form-footer">
+      Yemen Students Society · الجالية اليمنية © 2026
+    </div>
+
+  </div>
+
+  <script>
+  // ╔══════════════════════════════════════════════════════════╗
+  // ║  PASTE YOUR GOOGLE APPS SCRIPT URL BELOW               ║
+  // ╚══════════════════════════════════════════════════════════╝
+  const GOOGLE_SCRIPT_URL = "PASTE_YOUR_URL_HERE";
+  // Example: "https://script.google.com/macros/s/AKfycbx.../exec"
+
+
+  const form = document.getElementById('iftarForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const formStatus = document.getElementById('formStatus');
+  const successOverlay = document.getElementById('successOverlay');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    // Validate
+    const name = document.getElementById('nameInput').value.trim();
+    const studentNumber = document.getElementById('studentNumInput').value.trim();
+    const attending = document.querySelector('input[name="attending"]:checked');
+    const feedback = document.getElementById('feedbackInput').value.trim();
+
+    if (!name || !studentNumber || !attending) {
+      showStatus('يرجى ملء جميع الحقول المطلوبة', 'error');
+      return;
+    }
+
+    // Disable button
+    submitBtn.disabled = true;
+    submitBtn.textContent = '...جاري التسجيل';
+
+    try {
+      const response = await fetch(GOOGLE_SCRIPT_URL, {
+        method: 'POST',
+        mode: 'no-cors',  // Required for Google Apps Script
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: name,
+          studentNumber: studentNumber,
+          attending: attending.value,
+          feedback: feedback || '—'
+        })
+      });
+
+      // With no-cors, we can't read the response, but if it didn't throw, it worked
+      // Show success
+      form.style.display = 'none';
+      successOverlay.classList.add('success-overlay--visible');
+
+    } catch (error) {
+      showStatus('حدث خطأ — حاول مرة أخرى', 'error');
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'تسجيل الحضور';
+    }
+  });
+
+  function showStatus(message, type) {
+    formStatus.textContent = message;
+    formStatus.className = 'form-status';
+    formStatus.classList.add(`form-status--${type}`);
+
+    // Auto-hide after 4 seconds
+    setTimeout(() => {
+      formStatus.className = 'form-status';
+    }, 4000);
+  }
+  </script>
+
+</body>
+</html>
+```
+
+## Step 5: Find the Google Script URL line
+Near the bottom of the HTML file, find this line:
+
+```js
+const GOOGLE_SCRIPT_URL = "PASTE_YOUR_URL_HERE";
+```
+
+## Step 6: Replace with your URL
+Replace `PASTE_YOUR_URL_HERE` with the URL you got from deploying your Google Apps Script. It should look something like:
+
+```js
+const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx.../exec";
+```
+
+## Step 7: Test it
+Open `iftar.html` in your browser → fill in the form → submit → check your Google Sheet to confirm the data arrived.

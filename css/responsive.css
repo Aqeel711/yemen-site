@@ -1,0 +1,149 @@
+/* ============================================
+   Responsive — Media Queries
+   ============================================ */
+
+/* ---- Tablet (max-width: 1024px) ---- */
+@media (max-width: 1024px) {
+  :root {
+    --text-6xl: 3.5rem;
+    --text-5xl: 2.5rem;
+    --text-4xl: 2rem;
+    --space-section: 6rem;
+  }
+
+  .heritage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .articles__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---- Mobile landscape / small tablets (max-width: 768px) ---- */
+@media (max-width: 768px) {
+  :root {
+    --text-6xl: 2.5rem;
+    --text-5xl: 2rem;
+    --text-4xl: 1.75rem;
+    --text-3xl: 1.5rem;
+    --nav-height: 64px;
+    --space-section: 4rem;
+  }
+
+  .container {
+    padding: 0 var(--space-md);
+  }
+
+  /* Navbar mobile */
+  .navbar__links {
+    position: fixed;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    background: rgba(250, 246, 239, 0.98);
+    backdrop-filter: blur(20px);
+    padding: var(--space-2xl);
+    gap: var(--space-xl);
+    transform: translateX(100%);
+    transition: transform var(--t-base);
+  }
+
+  html[dir="rtl"] .navbar__links {
+    transform: translateX(-100%);
+  }
+
+  .navbar__links--open {
+    transform: translateX(0) !important;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  /* About */
+  .about__content {
+    grid-template-columns: 1fr;
+  }
+
+  .about__deco {
+    display: none;
+  }
+
+  /* Heritage */
+  .heritage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Events */
+  .event-card {
+    flex-direction: column;
+  }
+
+  .event-card__image {
+    width: 100%;
+    min-height: 220px;
+  }
+
+  .event-card__content {
+    width: 100%;
+  }
+
+  /* Articles */
+  .articles__grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Team */
+  .team__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-md);
+  }
+
+  /* Contact */
+  .contact__layout {
+    grid-template-columns: 1fr;
+    gap: var(--space-2xl);
+  }
+
+  /* Gallery */
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* ---- Mobile portrait (max-width: 480px) ---- */
+@media (max-width: 480px) {
+  :root {
+    --text-6xl: 2rem;
+    --text-5xl: 1.75rem;
+    --space-section: 3rem;
+  }
+
+  .hero__cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .event-card__content {
+    padding: var(--space-lg);
+  }
+
+  .event-card__image {
+    min-height: 180px;
+  }
+}
