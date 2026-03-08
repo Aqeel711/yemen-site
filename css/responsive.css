@@ -72,9 +72,6 @@
     grid-template-columns: 1fr;
   }
 
-  .about__deco {
-    display: none;
-  }
 
   /* Heritage */
   .heritage-grid {
