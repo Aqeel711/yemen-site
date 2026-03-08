@@ -361,9 +361,9 @@
       <h1 class="form-header__title">تسجيل حضور إفطار رمضان</h1>
       <p class="form-header__subtitle">Ramadan Iftar RSVP — Yemen Students Society</p>
       <div class="form-header__details">
-        <span>📅 TBD</span>
+        <span>📅 14 March</span>
         <span>🕐 Sunset</span>
-        <span>📍 TBD</span>
+        <span>📍 Activity Center</span>
       </div>
     </div>
 
@@ -465,7 +465,7 @@
   // ╔══════════════════════════════════════════════════════════╗
   // ║  PASTE YOUR GOOGLE APPS SCRIPT URL BELOW               ║
   // ╚══════════════════════════════════════════════════════════╝
-  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzjk6suo6Tc3qBVfq6kFNwe9JijTQMorF9sDfs8SNjgjCLA3k7E02jMyP0PXOKlZCSOyA/exec";
+  const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx5X74oxR9A7fHbGVHxBc5dq95nl8On769rZIL-O98DhkFkp0Nrdvjo5_92k70VQhJx/exec";
   // Example: "https://script.google.com/macros/s/AKfycbx.../exec"
   
 
@@ -494,17 +494,16 @@
     submitBtn.textContent = '...جاري التسجيل';
 
     try {
-      const params = new URLSearchParams();
-      params.append('name', name);
-      params.append('studentNumber', studentNumber);
-      params.append('attending', attending.value);
-      params.append('feedback', feedback || '—');
-
       const response = await fetch(GOOGLE_SCRIPT_URL, {
         method: 'POST',
         mode: 'no-cors',  // Required for Google Apps Script
-        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-        body: params.toString()
+        headers: { 'Content-Type': 'text/plain' },
+        body: JSON.stringify({
+          name: name,
+          studentNumber: studentNumber,
+          attending: attending.value,
+          feedback: feedback || '—'
+        })
       });
 
       // With no-cors, we can't read the response, but if it didn't throw, it worked
