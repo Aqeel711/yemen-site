@@ -278,22 +278,22 @@
         <div class="team-card">
           <img class="team-card__photo" src="assets/team/secertary.jpeg" alt="دانيه">
           <h3 class="team-card__name">دانيه</h3>
-          <p class="team-card__role">السكرتيرة</p>
+          <p class="team-card__role" data-i18n="team.role_secretary">السكرتيرة</p>
         </div>
         <div class="team-card">
           <img class="team-card__photo" src="assets/team/social media .jpeg" alt="علياء">
           <h3 class="team-card__name">علياء</h3>
-          <p class="team-card__role">مسؤولة الإعلام</p>
+          <p class="team-card__role" data-i18n="team.role_media">مسؤولة الإعلام</p>
         </div>
         <div class="team-card">
           <img class="team-card__photo" src="assets/team/sport.jpeg" alt="أحمد">
           <h3 class="team-card__name">أحمد</h3>
-          <p class="team-card__role">مسؤول الرياضة</p>
+          <p class="team-card__role" data-i18n="team.role_sports">مسؤول الرياضة</p>
         </div>
         <div class="team-card">
           <img class="team-card__photo" src="assets/team/event coordineter 2.jpeg" alt="ذياب">
           <h3 class="team-card__name">ذياب</h3>
-          <p class="team-card__role">مسؤول الفعاليات</p>
+          <p class="team-card__role" data-i18n="team.role_events">مسؤول الفعاليات</p>
         </div>
       </div>
     </div>
@@ -384,7 +384,7 @@
       <div class="sp-wave" id="sp-wave">
         <span></span><span></span><span></span><span></span><span></span>
       </div>
-      <span class="sp-title">سري حبي فيك غامض</span>
+      <span class="sp-title">سر حبي فيك غامض</span>
     </div>
     <div class="sp-controls">
       <button class="sp-btn" id="sp-btn" aria-label="تشغيل / إيقاف">
@@ -394,8 +394,8 @@
       <div class="sp-progress">
         <input type="range" class="sp-seek" id="sp-seek" min="0" max="100" value="0">
         <div class="sp-time">
-          <span id="sp-current">0:00</span>
           <span id="sp-duration">0:00</span>
+          <span id="sp-current">0:00</span>
         </div>
       </div>
     </div>
@@ -538,7 +538,7 @@
 
   <script>
     (function () {
-      const SONG_SRC  = 'assets/songs/سري حبي فيك غامض.mpeg';
+      const SONG_SRC  = 'assets/songs/سر حبي فيك غامض.mpeg';
       const audio     = new Audio(SONG_SRC);
       const btn       = document.getElementById('sp-btn');
       const iconPlay  = document.getElementById('sp-icon-play');
