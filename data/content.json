@@ -66,6 +66,15 @@
         "location": "مركز الأنشطة",
         "description": "ندعوكم لإفطار رمضاني دافئ مع الجالية اليمنية. تعالوا نتشارك الطعام والحكايات والأجواء الرمضانية الجميلة. الجميع مرحب بهم.",
         "cta": "سجّل الآن"
+      },
+      "fifa": {
+        "badge": "رياضة",
+        "title": "بطولة فيفا",
+        "date": "TBA",
+        "time": "TBA",
+        "location": "TBA",
+        "description": "بطولة فيفا بين فرق الجالية اليمنية! سجّل فريقك المكون من لاعبَين واستعد للمنافسة.",
+        "cta": "سجّل فريقك"
       }
     },
     "gallery": {
@@ -187,6 +196,15 @@
         "location": "Activity Center",
         "description": "Join us for a warm Ramadan Iftar with the Yemen Students Society. Come share food, stories, and beautiful Ramadan moments together. Everyone is welcome.",
         "cta": "RSVP Now"
+      },
+      "fifa": {
+        "badge": "Sports",
+        "title": "FIFA Tournament",
+        "date": "TBA",
+        "time": "TBA",
+        "location": "TBA",
+        "description": "Yemen Society FIFA Tournament! Register your 2-player team and compete for glory.",
+        "cta": "Register Your Team"
       }
     },
     "gallery": {
